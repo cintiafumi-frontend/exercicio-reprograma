@@ -70,17 +70,19 @@ header div {
 }
 
 header a {
-    background-color: #f3f3f3;
-    color: black;
+    background-color: khaki;
+    color: darkorange;
     padding: 10px 30px;
     text-decoration: none;
     transition: 5s all;
     text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 header a:hover {
-    background-color: black;
-    color: white;
+    background-color: darkorange;
+    color: khaki;
     transition: 1s color;
 }
 
@@ -159,9 +161,15 @@ header a:hover {
 }
 
 .servicos a {
-    text-decoration: none;
-    text-transform: uppercase;
     display: flex;
+    background-color: khaki;
+    color: darkorange;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: 5s all;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 /* Seção Curiosidades */
@@ -209,7 +217,7 @@ header a:hover {
 .contato div {
     display: flex;
     flex-direction: column;
-    min-width: 50vh;
+    min-width: 40vh;
 }
 
 div.dados {
@@ -220,17 +228,23 @@ div.dados {
     width: inherit;
 }
 
+.dados div {
+    width: inherit;
+}
+
 div input, textarea {
     background-color:rgba(255, 255, 0, 0.5);
     width: inherit;
     margin-bottom: 2vh;
+    padding: 5px;
 }
 
 .enviar {
     background-color: teal;
     color: white;
     width: 100%;
-    margin-top: 2vh;
+    padding: 10px;
+    font-size: 20px;
 }
 
 /* Newsletter */
@@ -252,7 +266,9 @@ div input, textarea {
 .newsletter div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
+
 .newsletter input {
     background-color: white;
     font-size: 15px;
@@ -290,6 +306,12 @@ footer div {
     justify-content: space-between;
     align-items: center;
 }
+
+footer > div {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 footer ul li {
     list-style: none;
 }
@@ -302,4 +324,11 @@ footer a {
 
 footer p {
     text-transform: uppercase;
+}
+
+
+
+/* MELL: ao invés de colocar os elementos dessas divs em linha, coloquei-as em colunas. Pra ver o antes e o depois, comente esse estilo */
+.info-footer, .redes-sociais-footer {
+    flex-direction: column;
 }
