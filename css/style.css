@@ -6,10 +6,14 @@ h1 {
     text-transform: uppercase;
     font-family: 'Flamenco', cursive;
     margin: 0 auto;
+    font-weight: normal;
+    font-size: 30px;
 }
 h2 {
     font-family: 'Flamenco', cursive;
     width: 100%;
+    font-size: 30px;
+    font-weight: normal;
 }
 body {
     margin: 0;
@@ -42,17 +46,21 @@ nav a {
     text-transform: uppercase;
 }
 
+nav img {
+    width: 100px;
+}
+
 .quero-agora {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
     padding: 5px 10px;
-    color: yellow;
+    color: #9C7B44;
 }
 
 /* Header */
 header {
-    min-height: 100vh;
+    min-height: 85vh;
     background: url(../img/bg-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,25 +72,32 @@ header {
 }
 
 header div {
-    max-width: 960px;
-    padding-top: 100px;
+    width: 50%;
+    align-items: center;
     color: white;
 }
 
+header p {
+    margin-bottom: 40px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
 header a {
-    background-color: khaki;
-    color: darkorange;
+    background-color: #FFDE69;
+    color: #9C7B44;
     padding: 10px 30px;
     text-decoration: none;
     transition: 5s all;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 20px;
     border-radius: 5px;
 }
 
 header a:hover {
-    background-color: darkorange;
-    color: khaki;
+    background-color: tomato;
+    color: #FFDE69;
     transition: 1s color;
 }
 
@@ -90,37 +105,47 @@ header a:hover {
 
 /* Seção Sobre */
 .sobre > div {
-    min-height: 50vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .sobre div div {
-    max-width: 35%;
     margin-left: 70px;
+    width: 35%;
+}
+
+.sobre img {
+    width: 100px;
 }
 
 /* Seção Passo-a-passo */
 .passo-a-passo {
-    min-height: 50vh;
+    min-height: 55vh;
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .passo-a-passo div {
-    width: 100%;
+    margin: 0 6%;
     display: flex;
+    justify-content: space-between;
 }
 
 .passo-a-passo div > div {
     display: flex;
     flex-direction: column;
+    width: 28%;
     align-items: center; 
 }
 
 .passo-a-passo img {
     display: block;
+    width: 120px;
 }
 
 .passo-a-passo p {
@@ -162,8 +187,8 @@ header a:hover {
 
 .servicos a {
     display: flex;
-    background-color: khaki;
-    color: darkorange;
+    background-color: #FFDE69;
+    color: #9C7B44;
     padding: 10px 30px;
     text-decoration: none;
     transition: 5s all;
@@ -187,23 +212,24 @@ header a:hover {
 }
 
 .curiosidades div {
-    width: 100%;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .curiosidades p {
-    width: 25%;
+    width: 20%;
 }
 .curiosidades span {
     font-size: 50px;
     display: block;
-    color: yellow;
+    color: #FFDE69;
     font-weight: bolder;
 }
 
 .contato {
-    min-height: 70vh;
+    background-color: #F4F3F2;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,16 +238,22 @@ header a:hover {
 
 .contato h2 {
     text-align: center;
+    margin: 30px
+}
+.contato form {
+    width: 63vh;
 }
 
 .contato div {
     display: flex;
     flex-direction: column;
-    min-width: 40vh;
 }
 
 div.dados {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 .dados form {
@@ -229,14 +261,17 @@ div.dados {
 }
 
 .dados div {
-    width: inherit;
+    width: 48%;
 }
 
 div input, textarea {
-    background-color:rgba(255, 255, 0, 0.5);
-    width: inherit;
+    background-color:#FFEBA9;
     margin-bottom: 2vh;
+    margin-top: 1vh;
     padding: 5px;
+    border-style: solid;
+    border-color: #F5EACF;
+    border-width: 1px;
 }
 
 .enviar {
@@ -245,16 +280,19 @@ div input, textarea {
     width: 100%;
     padding: 10px;
     font-size: 20px;
+    text-transform: uppercase;
+    border-width: 1px;
 }
 
 /* Newsletter */
 
 .newsletter {
-    background-color: gold;
+    background-color: #FFDE69;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-bottom: 2%;
+    align-items: center;
 }
 
 .newsletter h2 {
@@ -265,8 +303,9 @@ div input, textarea {
 }
 .newsletter div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 60%;
 }
 
 .newsletter input {
@@ -277,7 +316,7 @@ div input, textarea {
 }
 
 .newsletter a {
-    background-color: red;
+    background-color: #D92D16;
     color: white;
     font-size: 20px;
     text-transform: uppercase;
